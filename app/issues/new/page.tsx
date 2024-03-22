@@ -1,5 +1,7 @@
 "use client"
 import { TextArea, TextField, Button } from "@radix-ui/themes";
+import SimpleMDE from "react-simplemde-editor";
+import "easymde/dist/easymde.min.css";
 import { MagnifyingGlassIcon } from '@radix-ui/react-icons'
 import React from "react";
 
@@ -13,7 +15,8 @@ const NewIssuePage = () => {
         <TextField.Input placeholder="title" />
       </TextField.Root>
       <TextArea placeholder="description" />
-      <Button>Submit</Button>
+      <SimpleMDE />
+      <Button>Submit new issue</Button>
     </div>
   );
 };
